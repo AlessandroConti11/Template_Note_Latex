@@ -1,0 +1,51 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{note_style}
+
+
+%%%%%%%%%%%%%%%%%%
+% Import Package %
+%%%%%%%%%%%%%%%%%%
+\input{0/package}
+
+
+%%%%%%%%%%%%%%%%%%%
+% Header & Footer %
+%%%%%%%%%%%%%%%%%%%
+\input{0/header_footer_style}
+
+
+%%%%%%%%%%%
+% Theorem %
+%%%%%%%%%%%
+\input{0/theorem}
+
+
+%%%%%%%%%%%%
+% Glossary %
+%%%%%%%%%%%%
+\input{0/glossary}
+
+
+%%%%%%%%%%%%%%
+% Code style %
+%%%%%%%%%%%%%%
+\input{0/code_style}
+
+
+%%%%%%%%%%%%%%
+% Title Page %
+%%%%%%%%%%%%%%
+\input{0/title/title}
+
+
+%%%%%%%%%%%%%%%%%%%%%%
+% Customized Command %
+%%%%%%%%%%%%%%%%%%%%%%
+\let\oldref\ref
+\renewcommand{\ref}[1]{(\oldref{#1})}
+
+\let\oldtableofcontents\tableofcontents
+\renewcommand{\tableofcontents}{
+    \oldtableofcontents
+    \newpage
+}

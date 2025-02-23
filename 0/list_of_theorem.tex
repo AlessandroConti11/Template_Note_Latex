@@ -1,0 +1,67 @@
+%%%%%%%%%%%%%%%%%%%
+% List of Theorem %
+%%%%%%%%%%%%%%%%%%%
+\ifnum\value{definition}>0
+    % \newpage
+    \listoftheorems[ignoreall, show={definition}, swapnumber, title=List of Definition]
+    \addcontentsline{toc}{section}{List of Definition}
+\fi
+
+\ifnum\value{assumption}>0
+    % \newpage
+    \listoftheorems[ignoreall, show={assumption}, swapnumber, title=List of Assumption]
+    \addcontentsline{toc}{section}{List of Assumption}
+\fi
+
+\ifnum\value{principle}>0
+    % \newpage
+    \listoftheorems[ignoreall, show={principle}, swapnumber, title=List of Principle]
+    \addcontentsline{toc}{section}{List of Principle}
+\fi
+
+\ifnum\value{theorem}>0
+    % \newpage
+    \listoftheorems[ignoreall, show={theorem}, swapnumber, title=List of Theorem]
+    \addcontentsline{toc}{section}{List of Theorem}
+\fi
+
+\ifnum\value{corollary}>0
+    % \newpage
+    \listoftheorems[ignoreall, show={corollary}, swapnumber, title=List of Corollary]
+    \addcontentsline{toc}{section}{List of Corollary}
+\fi
+
+\ifnum\value{proposition}>0
+    % \newpage
+    \listoftheorems[ignoreall, show={proposition}, swapnumber, title=List of Proposition]
+    \addcontentsline{toc}{section}{List of Proposition}
+\fi
+
+\ifnum\value{lemma}>0
+    % \newpage
+    \listoftheorems[ignoreall, show={lemma}, swapnumber, title=List of Lemma]
+    \addcontentsline{toc}{section}{List of Lemma}
+\fi
+
+\ifnum\value{remark}>0
+    % \newpage
+    \listoftheorems[ignoreall, show={remark}, swapnumber, title=List of Remark]
+    \addcontentsline{toc}{section}{List of Remark}
+\fi
+
+\ifnum\value{property}>0
+    % \newpage
+    \listoftheorems[ignoreall, show={property}, swapnumber, title=List of Property]    \addcontentsline{toc}{section}{List of Property}
+\fi
+
+\ifnum\value{test}>0
+    % \newpage
+    \listoftheorems[ignoreall, show={test}, swapnumber, title=List of Test]
+    \addcontentsline{toc}{section}{List of Test}
+\fi
+
+\ifnum\value{figure}>0
+    % \newpage
+    \listoffigures
+    \addcontentsline{toc}{section}{List of Figure}
+\fi

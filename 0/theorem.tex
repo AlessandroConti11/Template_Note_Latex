@@ -1,0 +1,86 @@
+%%%%%%%%%%%
+% Theorem %
+%%%%%%%%%%%
+\newtheorem{definition}{Definition}[section]
+\let\olddefinition\definition
+\renewenvironment{definition}[1][]
+  {\olddefinition[#1]\leavevmode}
+  {\vspace{10pt}}
+\crefformat{definition}{(definition~#2#1#3)}
+
+
+\newtheorem{assumption}{Assumption}[section]
+\let\oldassumption\assumption
+\renewenvironment{assumption}[1][]
+  {\oldassumption[#1]\leavevmode}
+  {\vspace{10pt}}
+\crefformat{assumption}{(assumption~#2#1#3)}
+
+
+\newtheorem{principle}{Principle}[section]
+\let\oldprinciple\principle
+\renewenvironment{principle}[1][]
+  {\oldprinciple[#1]\leavevmode}
+  {\vspace{10pt}}
+\crefformat{principle}{(principle~#2#1#3)}
+
+
+\newtheorem{theorem}{Theorem}[section]
+\let\oldtheorem\theorem
+\renewenvironment{theorem}[1][]
+  {\oldtheorem[#1]\leavevmode}
+  {\vspace{10pt}}
+\crefformat{theorem}{(theorem~#2#1#3)}
+
+
+\newtheorem{corollary}{Corollary}[section]
+\let\oldcorollary\corollary
+\renewenvironment{corollary}[1][]
+  {\oldcorollary[#1]\leavevmode}
+  {\vspace{10pt}}
+\crefformat{corollary}{(corollary~#2#1#3)}
+
+
+\newtheorem{proposition}{Proposition}[section]
+\let\oldproposition\proposition
+\renewenvironment{proposition}[1][]
+  {\oldproposition[#1]\leavevmode}
+  {\vspace{10pt}}
+\crefformat{proposition}{(proposition~#2#1#3)}
+
+
+\newtheorem{lemma}{Lemma}[section]
+\let\oldlemma\lemma
+\renewenvironment{lemma}[1][]
+  {\oldlemma[#1]\leavevmode}
+  {\vspace{10pt}}
+\crefformat{lemma}{(lemma~#2#1#3)}
+
+
+\newtheorem{remark}{Remark}[section]
+\let\oldremark\remark
+\renewenvironment{remark}[1][]
+  {\oldremark[#1]\leavevmode}
+  {\vspace{10pt}}
+\crefformat{remark}{(remark~#2#1#3)}
+
+
+\newtheorem{property}{Property}[section]
+\let\oldproperty\property
+\renewenvironment{property}[1][]
+  {\oldproperty[#1]\leavevmode}
+  {\vspace{10pt}}
+\crefformat{property}{(property~#2#1#3)}
+
+
+\newtheorem{test}{Test}[section]
+\let\oldtest\test
+\renewenvironment{test}[1][]
+  {\oldtest[#1]\leavevmode}
+  {\vspace{10pt}}
+\crefformat{test}{(test~#2#1#3)}
+
+
+
+%used for the list of theorems --> <theorem> - <theorem name>
+\renewcommand{\thmtformatoptarg}[1]{ -- #1}

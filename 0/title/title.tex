@@ -1,0 +1,44 @@
+% Logo
+\newcommand{\customLogo}{0/title/Logo_Politecnico_Milano.png}
+\newcommand{\setLogo}[1]{\renewcommand{\customLogo}{#1}}
+
+% Course Title
+\newcommand{\customTitle}{Course Title}
+\newcommand{\setCourseTitle}[1]{\renewcommand{\customTitle}{#1}}
+
+% Academic Year
+\newcommand{\customYear}{Academic Year}
+\newcommand{\setYear}[1]{\renewcommand{\customYear}{#1}}
+
+% Author
+\newcommand{\customAuthor}{Author}
+\newcommand{\setAuthorCustom}[1]{\renewcommand{\customAuthor}{#1}}
+
+% University
+\newcommand{\customFooter}{University}
+\newcommand{\setFooter}[1]{\renewcommand{\customFooter}{#1}}
+
+% Degree
+\newcommand{\customCourseInfo}{Degree}
+\newcommand{\setDegree}[1]{\renewcommand{\customCourseInfo}{#1}}
+
+
+%%%%%%%%%%%%%%
+% Title Page %
+%%%%%%%%%%%%%%
+\newcommand{\makeCustomTitle}{
+    \begin{titlepage}
+        \centering
+        \includegraphics[width=0.4\textwidth]{\customLogo}\\[2cm]
+        
+        {\huge \textbf{\customTitle}} \\[0.5cm]
+        {\Large \textbf{\customYear}} \\[1.5cm]
+        {\Large \textbf{\customAuthor}} \\[0.5cm]
+        
+        \vfill 
+        
+        \Large \customFooter \\[0.3cm]
+        \large \customCourseInfo \\[0.3cm]
+    \end{titlepage}
+}
+

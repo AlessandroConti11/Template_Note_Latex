@@ -1,0 +1,53 @@
+\documentclass{article}
+\usepackage{note_style}
+
+
+% Title page customization
+\setLogo{0/title/Logo_Politecnico_Milano.png}
+\setCourseTitle{Course Title}
+\setYear{Academic Year}
+\setAuthorCustom{Author}
+\setFooter{University}
+\setDegree{Degree}
+
+
+\begin{document}
+    %%%%%%%%%%%%%%
+    % Title Page %
+    %%%%%%%%%%%%%%
+    \makeCustomTitle
+    
+    
+    %%%%%%%%%%%%
+    % Contents %
+    %%%%%%%%%%%%
+    \tableofcontents
+    
+    
+    %%%%%%%%%%%%%%%%
+    % All Sections %
+    %%%%%%%%%%%%%%%%
+    \section{Section}
+        In this part of the document the various sections should be added.
+
+        \begin{definition}[Definition] \label{definition label}
+
+            This is a definition. If you want to see the implementation, it is found in \texttt{0/theorem.tex}.
+        \end{definition}
+
+        \gls{acr}: this is a glossary item, it is found in \texttt{0/list\_of\_glossary.tex}, if you want to add a new type of glossary you add it in \texttt{0/glossary.tex}.
+
+        \cref{definition label}: this is a reference to a definition.
+
+
+    %%%%%%%%%%%%%%%%%%%
+    % List of Theorem %
+    %%%%%%%%%%%%%%%%%%%
+    \include{0/list_of_theorem}
+    
+    
+    %%%%%%%%%%%%
+    % Glossary %
+    %%%%%%%%%%%%
+    \input{0/list_of_glossary}
+\end{document}

@@ -1,0 +1,12 @@
+%%%%%%%%%%%%%%%%%%%
+% Header & Footer %
+%%%%%%%%%%%%%%%%%%%
+\pagestyle{fancy}
+% Delete default headers and footers
+\fancyhf{} 
+% Show only the name of the section on the right
+\fancyhead[R]{\nouppercase{\rightmark}}
+% Page number in the center of the footer
+\fancyfoot[C]{\thepage} 
+% Add section name in the upper right corner
+\renewcommand{\sectionmark}[1]{\markright{#1}} 
