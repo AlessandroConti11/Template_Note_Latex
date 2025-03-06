@@ -51,4 +51,4 @@
 }
 
 \let\oldparagraph\paragraph
-\renewcommand{\paragraph}{\oldparagraph{}\leavevmode}
+\renewcommand{\paragraph}[1]{\oldparagraph{#1}\leavevmode}
