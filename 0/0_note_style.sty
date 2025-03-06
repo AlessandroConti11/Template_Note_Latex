@@ -49,3 +49,6 @@
     \oldtableofcontents
     \newpage
 }
+
+\let\oldparagraph\paragraph
+\renewcommand{\paragraph}{\oldparagraph{}\leavevmode}
