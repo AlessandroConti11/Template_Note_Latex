@@ -37,7 +37,16 @@
 
         \gls{acr}: this is a glossary item, it is found in \texttt{0/list\_of\_glossary.tex}, if you want to add a new type of glossary you add it in \texttt{0/glossary.tex}.
 
-        \cref{definition label}: this is a reference to a definition.
+        \cref{definition label}: this is a reference to a definition. \cref{This is an algorithm}: this is a reference to an algorithm.
+
+        \begin{algorithm}
+            \caption{This is an algorithm} \label{This is an algorithm}
+            \begin{algorithmic}[1]
+                \Function{algorithm}{a, b}         
+                    \State \Return $a + b$
+                \EndFunction
+            \end{algorithmic}
+        \end{algorithm}
 
 
     %%%%%%%%%%%%%%%%%%%

@@ -65,3 +65,9 @@
     \listoffigures
     \addcontentsline{toc}{section}{List of Figure}
 \fi
+
+\ifnum\value{algorithm}>0
+    % \newpage
+    \listofalgorithms
+    \addcontentsline{toc}{section}{List of Algorithms}
+\fi

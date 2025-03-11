@@ -52,3 +52,18 @@
 
 \let\oldparagraph\paragraph
 \renewcommand{\paragraph}[1]{\oldparagraph{#1}\leavevmode}
+
+\makeatletter
+\renewcommand{\thealgorithm}{%
+    \ifnum\value{subsubsection}>0
+        \thesubsubsection.\arabic{algorithm}
+    \else
+        \ifnum\value{subsection}>0
+            \thesubsection.\arabic{algorithm}
+        \else
+            \thesection.\arabic{algorithm}
+        \fi
+    \fi
+}
+\makeatother
+
