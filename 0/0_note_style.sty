@@ -49,3 +49,12 @@
     \oldtableofcontents
     \newpage
 }
+
+\let\oldparagraph\paragraph
+\renewcommand{\paragraph}[1]{\oldparagraph{#1}\leavevmode}
+
+\let\oldsubparagraph\subparagraph
+\renewcommand{\subparagraph}[1]{\oldsubparagraph{#1}\leavevmode}
+
+\setcounter{secnumdepth}{5}
+\setcounter{tocdepth}{5}
