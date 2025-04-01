@@ -81,6 +81,14 @@
 \crefformat{test}{(test~#2#1#3)}
 
 
+\newtheorem{notation}{Notation}[section]
+\let\oldnotation\notation
+\renewenvironment{notation}[1][]
+  {\oldnotation[#1]\leavevmode}
+  {\vspace{10pt}}
+\crefformat{notation}{(notation~#2#1#3)}
+
+
 
 %used for the list of theorems --> <theorem> - <theorem name>
 \renewcommand{\thmtformatoptarg}[1]{ -- #1}
