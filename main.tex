@@ -42,8 +42,15 @@
         \cref{definition label}: this is a reference to a definition. \cref{This is an algorithm}: this is a reference to an algorithm.
 
         \begin{algorithm}
+            \scriptsize
             \caption{This is an algorithm} \label{This is an algorithm}
             \begin{algorithmic}[1]
+                \Require
+                    \Statex $a$ \Comment{number}
+                    \Statex $b$ \Comment{number}
+                \Ensure
+                    \Statex $a + b$ \Comment{number}
+                    
                 \Function{algorithm}{a, b}         
                     \State \Return $a + b$
                 \EndFunction
