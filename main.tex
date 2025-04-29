@@ -58,6 +58,43 @@
             \end{algorithmic}
         \end{algorithm}
 
+        \noindent \scalebox{1}{
+             \begin{minipage}[c]{\textwidth}
+                \begin{algorithm}[H]
+                    \scriptsize
+                    \caption{Very long algorithm} \label{4-way merge algorithm}
+                    \begin{algorithmic}[1]
+                        \Require 
+                            \Statex \texttt{matrix} \Comment{unsorted $\texttt{matrix} \in {\mathbb{M}at_{k \times k}}$ whose $\frac{k}{2} \times \frac{k}{2}$-subarrays are roughly sorted}
+                        \Ensure
+                            \Statex \texttt{matrix} \Comment{roughly sorted $\texttt{matrix} \in {\mathbb{M}at_{k \times k}}$}
+                        \Statex
+        
+                        \For{\texttt{row} in \texttt{matrix}}
+                            \If{\texttt{row} in upper half of the \texttt{matrix}}
+                                \State $\texttt{sortAscending}{\left(\texttt{row}\right)}$
+                            \Else
+                                \State $\texttt{sortDescending}{\left(\texttt{row}\right)}$
+                            \EndIf
+                        \EndFor
+                        \For{\texttt{column} in \texttt{matrix}}
+                            \State $\texttt{sort}{\left(\texttt{column}\right)}$
+                        \EndFor
+                        \For{\texttt{row} in \texttt{matrix}}
+                            \If{\texttt{row} is odd}
+                                \State $\texttt{sortAscending}{\left(\texttt{row}\right)}$
+                            \Else
+                                \State $\texttt{sortDescending}{\left(\texttt{row}\right)}$
+                            \EndIf
+                        \EndFor
+                        \For{\texttt{column} in \texttt{matrix}}
+                            \State $\texttt{sort}{\left(\texttt{column}\right)}$
+                        \EndFor
+                    \end{algorithmic}
+                \end{algorithm}
+            \end{minipage}
+        }
+
 
     %%%%%%%%%%%%%%%%%%%
     % List of Theorem %
