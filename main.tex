@@ -95,6 +95,24 @@
             \end{minipage}
         }
 
+        \begin{table}[H]
+            \centering
+            \bgroup
+            \def\arraystretch{1.5}
+                \begin{tabular}{|c|c|c|}
+                     \hline
+                     & Standard Machine & Variant Machine \\
+                     \hline
+                     \texttt{randomKeyGuess} & $2^{36} - 2^{33}$ & $2^{36} - 2^{10}$ \\
+                     \hline
+                     \texttt{machineKeys} & $2^{10} \cdot 2^{23} = 2^{33}$ & $2^{10}$ \\
+                    \hline
+                \end{tabular}
+            \egroup
+            \caption{Machine Inputs}
+            \label{tab:machine inputs}
+        \end{table}
+
 
     %%%%%%%%%%%%%%%%%%%
     % List of Theorem %
