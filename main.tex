@@ -48,7 +48,7 @@
 
         \cref{definition label}: this is a reference to a definition. \cref{This is an algorithm}: this is a reference to an algorithm.
 
-        \begin{algorithm}
+        \begin{algorithm}[H]
             \scriptsize
             \caption{This is an algorithm} \label{This is an algorithm}
             \begin{algorithmic}[1]
@@ -101,6 +101,35 @@
                 \end{algorithm}
             \end{minipage}
         }
+
+        \begin{algorithm}[H]
+            \scriptsize
+            \caption{Rotatesort Algorithm} \label{rotatesort algorithm}
+            \begin{multicols}{2}
+                \begin{algorithmic}[1]
+                    \Require 
+                        \Statex \texttt{matrix} \Comment{unsorted $\texttt{matrix} \in {\mathbb{M}at_{n \times n}}$}
+                    \Ensure
+                        \Statex \texttt{matrix} \Comment{sorted in row-major $\texttt{matrix} \in {\mathbb{M}at_{n \times n}}$}
+                    \Statex
+    
+                    \For{\texttt{verticalSlice} in \texttt{matrix}}
+                        \State $\texttt{balance}{\left(\texttt{verticalSlice}\right)}$ \Comment{reduces the number of dirty rows to at most $\sqrt{n}$}
+                    \EndFor
+                    \State $\texttt{unblock}{\left(\texttt{matrix}\right)}$
+                    \For{\texttt{horizontalSlice} in \texttt{matrix}}
+                        \State $\texttt{balance}{\left(\texttt{horizontalSlice}\right)}$
+                    \EndFor
+                    \State $\texttt{unblock}{\left(\texttt{matrix}\right)}$
+                    \State $\texttt{shear}{\left(\texttt{matrix}\right)}$
+                    \State $\texttt{shear}{\left(\texttt{matrix}\right)}$
+                    \State $\texttt{shear}{\left(\texttt{matrix}\right)}$
+                    \For{\texttt{row} in \texttt{matrix}}
+                        \State $\texttt{sort}{\left(\texttt{row}\right)}$
+                    \EndFor
+                \end{algorithmic}
+            \end{multicols}
+        \end{algorithm}
 
         \begin{table}[H]
             \centering
