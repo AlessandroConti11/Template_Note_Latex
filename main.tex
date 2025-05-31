@@ -59,9 +59,24 @@
                     \Statex $a + b$ \Comment{number}
                 \Statex
                 
-                \Function{algorithm}{a, b}         
+                \Procedure{\sc algorithm}{a, b}         
                     \State \Return $a + b$
-                \EndFunction
+                \EndProcedure
+            \end{algorithmic}
+        \end{algorithm}
+
+        \begin{algorithm}[H]
+            \scriptsize
+            \caption{\textsc{sum}{$\left(a, b\right)$}} \label{This }
+            \begin{algorithmic}[1]
+                \Require
+                    \Statex $a$: integer \Comment{number}
+                    \Statex $b$: integer \Comment{number}
+                \Ensure
+                    \Statex $a + b$: integer \Comment{number}
+                \Statex
+                
+                \State \Return $a + b$
             \end{algorithmic}
         \end{algorithm}
 
