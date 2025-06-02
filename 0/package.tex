@@ -1,6 +1,13 @@
 %%%%%%%%%%%%%%%%%%
 % Import Package %
 %%%%%%%%%%%%%%%%%%
+\usepackage{ifpdf}
+\ifpdf
+\usepackage[colorlinks,linkcolor=black,citecolor=black,urlcolor=black,
+bookmarks,bookmarksnumbered]{hyperref}
+\else
+\fi
+\usepackage[acronym, toc]{glossaries}
 \usepackage{graphicx} 
 \usepackage{titling}  
 \usepackage{mathtools}
@@ -28,7 +35,7 @@
 \usepackage{multicol}
 \usepackage{etaremune}
 \usepackage{nicefrac, xfrac}
-
+\usepackage{tabularx}
 
 
 
@@ -40,21 +47,7 @@
 \patchcmd{\listoftheorems}{\newpage}{}{}{}
 
 
-%%%%%%%%%%%%%
-% Hyperlink %
-%%%%%%%%%%%%%
-\usepackage{ifpdf}
-\ifpdf
-\usepackage[colorlinks,linkcolor=black,citecolor=black,urlcolor=black,
-bookmarks,bookmarksnumbered]{hyperref}
-\else
-\fi
 
-
-%%%%%%%%%%%%
-% Glossary %
-%%%%%%%%%%%%
-\usepackage[acronym, toc]{glossaries}
 
 
 %%%%%%%%%%%%%
