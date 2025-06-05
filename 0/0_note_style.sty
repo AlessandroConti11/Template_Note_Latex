@@ -58,3 +58,16 @@
 
 \setcounter{secnumdepth}{5}
 \setcounter{tocdepth}{5}
+
+
+% Vector & Matrix
+\newcommand{\vect}[1]{\mathbf{#1}}
+\newcommand{\matr}[1]{\mathrm{#1}}
+
+
+% Algorithmic Input & Output
+\renewcommand{\algorithmicrequire}{\textbf{Input:}}
+\renewcommand{\algorithmicensure}{\textbf{Output:}}
+
+
+\patchcmd{\listoftheorems}{\newpage}{}{}{}
